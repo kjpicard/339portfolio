@@ -1,0 +1,409 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16pt;
+  }
+
+header{
+    background-attachment: fixed;
+    background-image: url(../images/washtenaw.jpeg);  
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;     
+}
+
+  h1{
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 2;
+    padding-top: 50px;
+    text-shadow: -1px 0 #50C7C7, 0 1px #50C7C7, 1px 0 #50C7C7, 0 -1px #50C7C7;
+  }
+  
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  p {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer{
+      justify-content: center;
+      
+  }
+
+  .skipcont a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+
+  .nav{
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    list-style-type: none;
+    top: 0;
+    width: 100%;  
+  }
+
+
+
+  .nav ul li a.active-page{
+      border-style: solid;
+      border-color: #50C7C7;
+      font-weight: bold;
+
+      
+  }
+
+  /* .nav a:hover, a:focus{
+    color: #50C7C7;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+  } */
+
+  .skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute; /*Your code here - position relative to the parent */;
+    top: -40px; /*Your code here - place 40px higher */;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+
+  .text-block{
+      text-align: center;
+      margin: 10px;
+  }
+
+  .skip a:focus{ 
+    position: absolute;
+    top: 0px;
+  }
+
+  #message{
+      height: 100px;
+      width: 150px;
+      
+  }
+
+  @media screen and (max-width: 414px){
+
+    #profpic{
+        max-width: 60%;
+        padding: 20px;
+    }
+    #bighouse{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #dock{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #hike{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #start{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #taking-stern{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #gybe{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #double-trouble{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #lobsters{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #marker-portrait{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #mural{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #oifa{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #orange-cow{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #pen-cow{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #still-life{
+        max-width: 80%;
+        padding: 20px;
+    }
+    #courtney{
+        max-width: 80%;
+        padding: 20px;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: auto;
+    }
+  }
+
+  @media screen and (min-width: 415px) and (max-width: 768px){
+    #profpic{
+        max-width: 60%;
+        padding: 20px;
+    }
+    #bighouse{
+        max-width: 40%;
+        padding: 20px;
+    }
+    #dock{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #hike{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #start{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #taking-stern{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #gybe{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #double-trouble{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #lobsters{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #marker-portrait{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #mural{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #oifa{
+        max-width: 40%;
+        padding: 20px;
+ 
+    }
+    #orange-cow{
+        max-width: 40%;
+        padding: 20px;
+    }
+
+    #pen-cow{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #still-life{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    #courtney{
+        max-width: 40%;
+        padding: 20px;
+
+    }
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+  }
+
+  @media screen and (min-width: 769px){
+    #profpic{
+        max-width: 30%;
+        padding: 20px;
+        border: solid;
+        border-color: #50C7C7; 
+    }
+    #bighouse{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+    }
+    #dock{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #hike{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #start{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #taking-stern{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #gybe{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #double-trouble{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #lobsters{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #marker-portrait{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #mural{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #oifa{
+        max-width: 40%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+ 
+    }
+    #orange-cow{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+    }
+
+    #pen-cow{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #still-life{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    #courtney{
+        max-width: 25%;
+        padding: 15px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+
+    }
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+  }
+
+
+
+
