@@ -13,20 +13,56 @@ header{
     background-size: cover;
     height: 200px;     
 }
-
-  h1{
+h1{
     font-size: 2.5em;
     text-align: center;
     line-height: 2;
     padding-top: 50px;
     text-shadow: -1px 0 #50C7C7, 0 1px #50C7C7, 1px 0 #50C7C7, 0 -1px #50C7C7;
-  }
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 3.5s steps(40, end),
+}
+
   
   h2{
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    /* color: #CCFFFF; */
+    color: black;
+    font-weight: bold;
+    text-shadow: 
+      0 1px 0 #99E5E5, 
+      0 2px 0 #66CCCC, 
+      0 3px 0 #33B2B2, 
+      0 4px 0 #009999, 
+      0 5px 0 #199999, 
+      0 6px 1px rgba(0,0,0,.1), 
+      0 0 5px rgba(0,0,0,.1), 
+      0 1px 3px rgba(0,0,0,.3), 
+      0 3px 5px rgba(0,0,0,.2), 
+      0 5px 10px rgba(0,0,0,.25), 
+      0 10px 10px rgba(0,0,0,.2), 
+      0 20px 20px rgba(0,0,0,.15);
   }
+  #typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
   
   p {
     padding: 10px;
@@ -35,6 +71,7 @@ header{
   
   footer{
       justify-content: center;
+      font-size: 10pt;
       
   }
 
@@ -49,15 +86,18 @@ header{
     z-index: 1;
   }
 
-  .nav{
+  nav{
     font-family: 'Oswald', sans-serif;
     overflow: hidden;
     list-style-type: none;
-    top: 0;
-    width: 100%;  
+    top: 0; 
+    padding: 10px;
   }
 
-
+  nav li{
+    display: block;
+    padding-right: 20px;
+  }
 
   .nav ul li a.active-page{
       border-style: solid;
@@ -95,13 +135,15 @@ header{
     top: 0px;
   }
 
-  #message{
-      height: 100px;
-      width: 150px;
-      
-  }
+
+  
+
 
   @media screen and (max-width: 414px){
+    nav li{
+        display: inline;
+        padding-right: 20px;
+    }
 
     #profpic{
         max-width: 60%;
@@ -167,6 +209,10 @@ header{
         max-width: 80%;
         padding: 20px;
     }
+    #washtenaw{
+        max-width: 80%;
+        padding: 20px;
+    }
     .gallery{
         display: flex;
         flex-direction: column;
@@ -178,8 +224,12 @@ header{
   }
 
   @media screen and (min-width: 415px) and (max-width: 768px){
+    nav li{
+        display: inline;
+        padding-right: 20px;
+    }
     #profpic{
-        max-width: 60%;
+        max-width: 35%;
         padding: 20px;
     }
     #bighouse{
@@ -255,6 +305,10 @@ header{
         max-width: 40%;
         padding: 20px;
 
+    }
+    #washtenaw{
+        max-width: 30%;
+        padding: 20px;
     }
     .gallery{
         display: flex;
@@ -393,17 +447,95 @@ header{
         border-color: #50C7C7;
 
     }
+    #washtenaw{
+        max-width: 30%;
+        padding: 20px;
+        margin: 5px;
+        border: solid;
+        border-color: #50C7C7;
+    }
     .gallery{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+    }
 
+    .gallery img[src="images/bighouse.jpeg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/dock.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/hike.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/start.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/taking-stern.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/gybe.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/double-trouble.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/lobsters.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/marker-portrait.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/mural.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/oifa.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/orange-cow.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/pen-cow.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/courtney.jpg"]:hover{
+        opacity: 0.3;
+    }
+    .gallery img[src="images/still-life.jpg"]:hover{
+        opacity: 0.3;
     }
 
   }
 
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      background: white;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      -webkit-transition: none !important;/* Your code here - set to default setting */
+      transition: none !important;/* Your code here - set to default setting */
+      z-index: 1;
+    }
+  
+    .skip a:focus{
+      top:0;
+    }
+    #typewriter{
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        animation: 
+          typing none,
+          blink-caret none;
+    }
 
-
-
+  }

@@ -7,6 +7,15 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap" >
     <title>Kristen Picard.</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151967409-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151967409-1');
+    </script>
   </head>
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
@@ -33,29 +42,31 @@
     
       <p> If you want to reach out to me for any reason please use the form below. Fill it out with your email address and your message, and I'll get back to you shortly!  </p> 
         
-        <div class = 'form'>
-            <form
+    <div class = 'form'>
+        <form
       action="https://formspree.io/xpzzqwbv"
       method="POST">
   
 
     <fieldset>
     <label>Email Address:
-      <input type="email" id="email_addr" name="email_addr" required></label><br>
-
-      <label>Repeat Email Address:
-      <input type="email" id="email_addr_repeat" name="email_addr_repeat" required onchange="check1()"></label><br>
-
-      <label>Message:
-          <input type="message" id="message" name="message" required></label><br>
-
-
-    <!-- try oninput and onchange -->
-
-      <input type = "submit">
+      <input type="email" id="email_addr" name="email_addr" required>
+    </label><br>
+    <label>Repeat Email Address:
+    <input type="email" id="email_addr_repeat"name="email_addr_repeat" required onchange="check1()"></label><br>
+    <label>Message:
+        <input type="message" id="message" name="message" required>
+    </label><br>
+    
+    <input type = 'submit' value = 'Submit'> 
+    
       </form>
         </div>
     </div>
+    <a name="gallery"></a>
+    <div class="gallery">
+      <img id="washtenaw" src="images/washtenaw.jpeg" alt="Washtenaw Dairy ice cream shop." />
+  </div>
     </div>
     <footer>
       <p>University of Michigan School of Information <br/>
@@ -63,6 +74,9 @@
     </footer>
   </body>
 </html>
+
+
+
 
 
 
