@@ -37,32 +37,33 @@
         <h2>Contact</h2>
     </div>
     <div class="text-block">
-      <a name="inquiry"></a>
+      <a id="inquiry"></a>
       <p>Thank you for taking the time to look at my websit. I hope you learned something interesting about me that doesn't have to do with my academic or professional pursuits. That is the reason why I created this. </p>
     
       <p> If you want to reach out to me for any reason please use the form below. Fill it out with your email address and your message, and I'll get back to you shortly!  </p> 
         
     <div class = 'form'>
-        <form
+    <form
       action="https://formspree.io/xpzzqwbv"
       method="POST">
   
+      <!-- <input type="text" name="name">
+      <input type="email" name="_replyto">
+      <input type="submit" value="Send"> -->
 
     <fieldset>
-    <label>Email Address:
-      <input type="email" id="email_addr" name="email_addr" required>
-    </label><br>
-    <label>Repeat Email Address:
-    <input type="email" id="email_addr_repeat"name="email_addr_repeat" required onchange="check1()"></label><br>
-    <label>Message:
-        <input type="message" id="message" name="message" required>
-    </label><br>
-    
-    <input type = 'submit' value = 'Submit'> 
-    
+    <label>Email address:
+      <input type="email" id="email_addr" required></label><br>
+
+      <label>Repeat email address:
+      <input type="email" id="email_addr_repeat" required onchange="check1()"></label><br>
+    <!-- try oninput and onchange -->
+    <label>Message:
+    <input type='message' id='message' required></label><br>
+    <fieldset>
+
+      <input type = "submit">
       </form>
-        </div>
-    </div>
     <a name="gallery"></a>
     <div class="gallery">
       <img id="washtenaw" src="images/washtenaw.jpeg" alt="Washtenaw Dairy ice cream shop." />
