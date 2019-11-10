@@ -41,16 +41,10 @@
       <p>Thank you for taking the time to look at my websit. I hope you learned something interesting about me that doesn't have to do with my academic or professional pursuits. That is the reason why I created this. </p>
     
       <p> If you want to reach out to me for any reason please use the form below. Fill it out with your email address and your message, and I'll get back to you shortly!  </p> 
+    </div>
         
-    <div class = 'form'>
-    <form
-      action="https://formspree.io/xpzzqwbv"
-      method="POST">
-  
-      <!-- <input type="text" name="name">
-      <input type="email" name="_replyto">
-      <input type="submit" value="Send"> -->
-
+<div class = 'form'>
+    <form action="https://formspree.io/xpzzqwbv" method="POST">
     <fieldset>
     <label>Email address:
       <input type="email" id="email_addr" required></label><br>
@@ -59,16 +53,18 @@
       <input type="email" id="email_addr_repeat" required onchange="check1()"></label><br>
     <!-- try oninput and onchange -->
     <label>Message:
-    <input type='message' id='message' required></label><br>
-    <fieldset>
+    <input type='text' id='text'></label><br>
 
       <input type = "submit">
-      </form>
-    <a name="gallery"></a>
+    </fieldset>
+  </form>
+</div>
+    <a id="gallery"></a>
     <div class="gallery">
       <img id="washtenaw" src="images/washtenaw.jpeg" alt="Washtenaw Dairy ice cream shop." />
-  </div>
     </div>
+</div>
+
     <footer>
       <p>University of Michigan School of Information <br/>
         &copy; Kristen Picard 2019-2020</p>
